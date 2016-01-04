@@ -1,0 +1,8 @@
+<div id='container'>
+  <form name="shortenALink" ng-submit='addLink(shortenALink.$valid)' novalidate>
+    <input type='url' name='url' ng-model='link.url'>
+    <p ng-show="shortenALink.url.$invalid && shortenALink.url.$touched" class="help-block">Url needs to have http://</p>
+    <button ng-disabled="shortenALink.$invalid">Shorten a link!</button>
+  </form>
+  <a href="/#/links">View all shortened links</a>
+</div>

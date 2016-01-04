@@ -1,0 +1,13 @@
+<div id='signup'>
+  <h1>signup</h1>
+  <form name="signupForm" ng-submit='signup(signupForm.$valid)'>
+    <label for="username-signup">Username</label>
+    <input type='text' name="username" id="username-signup" ng-model='user.username' ng-minlength="3" ng-maxlength="8">
+    <p ng-show="signupForm.username.$error.minlength || signupForm.username.$error.maxlength">Username should be between 3 and 8 characters long</p>
+    <label for="password-signup">Password</label>
+    <input type="password" name="password" id="password-signup"ng-model='user.password' ng-minlength="6">
+    <p ng-show="signupForm.password.$error.minlength">Password should be more than 5 characters long</p>
+    <button ng-disabled="signinForm.$invalid">signup</button>
+  </form>
+  <a href="#/signin">Already have an account? <strong>Signin</strong> ...</a>
+</div>

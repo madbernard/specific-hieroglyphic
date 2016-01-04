@@ -1,0 +1,13 @@
+<div id='container'>
+  <h2>Pre-shortened Links Below!</h2>
+  <a href="/#/shorten">Shorten a link!</a>
+  <input type="text" ng-model="search" placeholder="search">
+  <ul>
+    <li ng-repeat="displayedLink in data.links | orderBy: '-visits' | filter: search">
+      {{ displayedLink.url }}<br>
+      {{ displayedLink.title }}<br>
+      <a href="{{ displayedLink.base_url }}/api/links/{{ displayedLink.code }}">{{ displayedLink.base_url }}/{{ displayedLink.code }}</a><br>
+      {{ displayedLink.visits }}
+    </li>
+  </ul>
+</div>

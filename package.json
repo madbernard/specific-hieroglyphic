@@ -1,0 +1,16 @@
+{
+  "name": "specific-heiroglyphics",
+  "version": "0.0.1",
+  "description": "a 'your name in heiroglyphics' app",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "start": "gulp"
+  },
+  "author": "Madeline Bernard",
+  "license": "LicenseRef-LICENSE",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

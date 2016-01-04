@@ -1,0 +1,13 @@
+<div id='signin'>
+  <h1>signin</h1>
+  <form name="signinForm" ng-submit='signin(signinForm.$valid)' novalidate>
+    <label for="username-signin">Username</label>
+    <input type="text" name="username" id="username-signin" ng-model='user.username' ng-minlength="3" ng-maxlength="8">
+    <p ng-show="signinForm.username.$error.minlength || signinForm.username.$error.maxlength">Username should be between 3 and 8 characters long</p>
+    <label for="password-signin">Password</label>
+    <input type="password" name="password" id="password-signin" ng-model='user.password' ng-minlength="6">
+    <p ng-show="signinForm.password.$error.minlength">Password should be more than 5 characters long</p>
+    <button ng-disabled="signinForm.$invalid">signin</button>
+  </form>
+  <a href="#/signup">Don't have an account? <strong>Signup</strong> ...</a>
+</div>
