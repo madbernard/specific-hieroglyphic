@@ -2,7 +2,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffecb3;
+  background-image: url("../assets/glyphs.jpg");
+  background-repeat: repeat;
+  background-color: #444;
   min-height: 100vh;
   height: 100vh;
   margin: 0;
@@ -19,7 +21,9 @@ body {
   margin: 0 auto;
   margin-top: 2%;
   height: 85%;
+  border-style: solid;
   border-radius: 10px;
+  border-color: #bbb;
   text-align: center;
 }
 
