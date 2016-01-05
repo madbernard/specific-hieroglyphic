@@ -1,16 +1,16 @@
-  var express     = require('express'),
-      mongoose    = require('mongoose');
+var express = require('express');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost/shortly'); // connect to mongo database named shortly
-
+app.set('port', (process.env.PORT || 5001));
 // configure our server with all the middleware and and routing
 require('./config/middleware.js')(app, express);
 
 // export our app for testing and flexibility, required by index.js
 
-app.listen(8000);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
 
 module.exports = app;
 
