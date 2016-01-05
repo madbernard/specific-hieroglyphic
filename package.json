@@ -1,16 +1,16 @@
 {
-  "name": "specific-heiroglyphics",
+  "name": "specific-hieroglyphics",
   "version": "0.0.1",
-  "description": "a 'your name in heiroglyphics' app",
+  "description": "a 'your name in hieroglyphics' app",
   "main": "app.js",
   "scripts": {
-    "test": "karma start karma.conf.js",
+    "test": "karma start karma.conf.jsFIXME",
     "start": "gulp"
   },
-  "author": "Madeline Bernard",
-  "license": "LicenseRef-LICENSE",
-  "devDependencies": {
-  },
+  "author": { "name" : "Madeline Bernard", "email" : "madeline.a.bernard@gmail.com" },
+  "license": "SEE LICENSE IN license.txt",
+  "devDependencies": {},
   "dependencies": {
+    "angular": "^1.4.8"
   }
 }

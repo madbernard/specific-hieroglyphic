@@ -1,10 +1,4 @@
-angular.module('shortly', [
-  'shortly.services',
-  'shortly.links',
-  'shortly.shorten',
-  'shortly.auth',
-  'ui.router'
-])
+angular.module('specGlyph', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider, $httpProvider) {
   $urlRouterProvider
     .otherwise('/links');

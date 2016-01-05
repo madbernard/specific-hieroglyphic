@@ -1,23 +1,47 @@
-<!DOCTYPE html>
-<html ng-app='shortly'>
+  <!DOCTYPE html>
+<html lang="en" ng-app='specGlyph'>
   <head>
     <meta charset="utf-8" />
-    <title>Shortly</title>
+    <title>Specific Hieroglyphic Name Generator</title>
+    <style type="text/css" media="screen, print">
+        @font-face {
+          font-family: "Lene Kristiansen Hieroglyphic";
+          src: url("./assets/AncientEgyptianHieroglyphs.otf");
+        }
+
+        h2 { font-family: "Lene Kristiansen Hieroglyphic", serif;
+          font-size: 300%
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
   </head>
   <body>
-    <h1>Shortly</h1>
+    <div>
+      <h1>Specific Hieroglyphic Name Generator</h1>
+    </div>
 
+    <div>
+      <h2>font check baby {{ nameBox }}</h2>
+    </div>
+
+    <div>
+      <label>Type your name here:<input type="text" ng-model="nameBox" /></label>
+      <h2>{{ nameBox }}</h2>
+    </div>
+
+    <div>
+      <p>Info box for glyph that will be hidden</p>
+    </div>
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
     <div ui-view></div>
 
-    <script src="lib/angular/angular.js"></script>
-    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-    <script src="app/auth/auth.js"></script>
-    <script src="app/links/links.js"></script>
-    <script src="app/shorten/shorten.js"></script>
-    <script src="app/services/services.js"></script>
+    <!-- <script src="app/auth/auth.js"></script> -->
+    <!-- <script src="app/links/links.js"></script> -->
+    <!-- <script src="app/shorten/shorten.js"></script> -->
+    <!-- <script src="app/services/services.js"></script> -->
     <script src="app/app.js"></script>
   </body>
 </html>
