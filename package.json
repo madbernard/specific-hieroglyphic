@@ -4,7 +4,7 @@
   "description": "a 'your name in hieroglyphics' app",
   "main": "app.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node ./server/server.js"
   },
   "author": {
     "name": "Madeline Bernard",
