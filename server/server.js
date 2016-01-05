@@ -1,4 +1,9 @@
-var express = require('express');
+  var express     = require('express'),
+      db    = require('pg');
+
+// export DATABASE_URL=postgres:///$(whoami)
+
+// db.connect('mongodb://localhost/shortly'); // connect to mongo database named shortly
 
 var app = express();
 
