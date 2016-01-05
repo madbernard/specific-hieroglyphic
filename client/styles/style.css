@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   margin-top: 2%;
   height: 85%;
-  border-style: solid;
+  border-style: outset;
   border-radius: 10px;
   border-color: #bbb;
   text-align: center;
@@ -31,8 +31,25 @@ body {
   display: flex;
 }
 
-.title p {
+.title .hi {
   font-weight: bold;
+}
+
+.line {
+  display: flex;
+}
+
+.stack .hi {
+  margin: 0;
+  line-height: .6;
+}
+
+.bk {
+  margin: 0;
+}
+
+.pipe {
+  margin: 0;
 }
 
 h1 {
@@ -43,6 +60,7 @@ h1 {
 
 input {
   margin-top: 10px;
+  background-color: aliceblue;
 }
 
 a {
