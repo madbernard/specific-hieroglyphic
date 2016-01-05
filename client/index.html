@@ -9,32 +9,29 @@
           src: url("./assets/AncientEgyptianHieroglyphs.otf");
         }
 
-        h2 { font-family: "Lene Kristiansen Hieroglyphic", serif;
+        .hi { font-family: "Lene Kristiansen Hieroglyphic", serif;
           font-size: 300%
         }
     </style>
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
   </head>
   <body>
-    <section>
-    <div>
-      <h1>Specific Hieroglyphic Name Generator</h1>
+    <section class="main">
+    <div class="title">
+      <p class="hi">YAB</p><h1>Specific Hieroglyphic Name Generator</h1><p class="hi">bay</p>
     </div>
 
     <div>
-      <h2>font check baby</h2>
+      <label>Type your name here:<br>
+        <input type="text" ng-model="nameBox" /></label>
     </div>
 
     <div>
-      <label>Type your name here:<input type="text" ng-model="nameBox" /></label>
+      <h2 class="hi">{{ nameBox.toLowerCase() }}</h2>
     </div>
 
     <div>
       <p>Info box for glyph that will be hidden</p>
-    </div>
-
-    <div>
-      <h2>{{ nameBox.toLowerCase() }}</h2>
     </div>
     <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
     <div ui-view></div>

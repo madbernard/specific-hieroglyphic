@@ -1,4 +1,4 @@
-/*font face for h2 to hieroglyphics apparently works better in head of html*/
+/*font face for .hi to hieroglyphics apparently works better in head of html*/
 
 body {
   font-family: Arial, sans-serif;
@@ -9,7 +9,7 @@ body {
   overflow-y: scroll;
 }
 
-section {
+.main {
   padding: 1em;
   background-color: #fff;
   display: flex;
@@ -20,16 +20,29 @@ section {
   margin-top: 2%;
   height: 85%;
   border-radius: 10px;
+  text-align: center;
 }
 
-a {
-  color: #333;
-  font-size: 14px;
-  text-decoration: none;
+.title {
+  display: flex;
+}
+
+.title p {
+  font-weight: bold;
 }
 
 h1 {
   font-family: Palatino, serif;
   /*font-style: italic;*/
   font-size: 3rem;
+}
+
+input {
+  margin-top: 10px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
 }
