@@ -1,7 +1,7 @@
 ### node etc ###
 
 # Client/Lib
-client/lib/
+#client/lib/
 
 # Logs
 logs
