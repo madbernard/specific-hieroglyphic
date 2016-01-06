@@ -20,17 +20,20 @@
     <div class="title">
       <p class="hi">YAB</p><h1>Specific Hieroglyphic Name Generator</h1><p class="hi">bay</p>
     </div>
+    <div ng-controller="GlyphClasser">
 
     <div>
       <label>Type your name here:<br>
+        <!-- so there is a $scope.nameBox -->
         <input type="text" ng-model="nameBox" /></label>
     </div>
 
-    <div class="line" ng-controller="GlyphClasser">
+    <div class="line">
       <!-- https://docs.angularjs.org/api/ng/directive/ngClass If the expression evaluates to an object, then for each key-value pair of the object with a truthy value the corresponding key is used as a class name.-->
-      <!-- https://docs.angularjs.org/guide/expression if you need if statment, make it a controller method and call the method from the view-->
+      <!-- https://docs.angularjs.org/guide/expression if you need if statment, make it a controller method and call the method from the view-->"
       <!-- https://docs.angularjs.org/guide/controller Any methods assigned to the scope are available in the template/view, and can be invoked via angular expressions -->
-      <p class="hi" ng-class="{pipe: yesPipe, bk: yesBlock, stack: yesStack, line: yesLine}">{{ nameBox.toLowerCase() }}</p>
+      <p class="hi" ng-class="{pipe: 'true==true'}">{{ nameBox.toLowerCase() }}</p>
+    </div>
     </div>
 
     <div class="line">
