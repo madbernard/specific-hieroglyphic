@@ -16,59 +16,67 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
   </head>
   <body>
-    <section class="main">
-    <div class="title">
-      <p class="hi">YAB</p><h1>Specific Hieroglyphic Name Generator</h1><p class="hi">bay</p>
-    </div>
-    <div ng-controller="GlyphClasser">
+    <section class="main-content">
 
-    <div>
-      <label>Type your name here:<br>
-        <!-- so there is a $scope.nameBox -->
-        <input type="text" ng-model="nameBox" /></label>
-    </div>
+      <div class="title">
+        <p class="hi">YAB</p><h1>Specific Hieroglyphic Name Generator</h1><p class="hi">bay</p>
+      </div>
 
-    <div class="line">
-      <!-- https://docs.angularjs.org/api/ng/directive/ngClass If the expression evaluates to an object, then for each key-value pair of the object with a truthy value the corresponding key is used as a class name.-->
-      <!-- https://docs.angularjs.org/guide/expression if you need if statment, make it a controller method and call the method from the view-->
-      <!-- https://docs.angularjs.org/guide/controller Any methods assigned to the scope are available in the template/view, and can be invoked via angular expressions -->
-      <!--  -->
-      <h2 class="hi" ng-class="{pipe: 'true==true'}">{{ nameBox.toLowerCase() }}</h2>
-    </div>
-    </div>
-
-    <div>...</div>
-    <div>..</div>
-    <div>.</div>
-
-    <div class="line">
-      <p class="hi bk">m</p>
-      <div class="stack">
+      <div ng-controller="GlyphClasser">
         <div>
-          <p class="hi">l</p>
-        </div>
-        <div>
-          <p class="hi">n</p>
+          <label>Type your name here:<br>
+          <!-- so there is a $scope.nameBox -->
+          <input type="text" ng-model="nameBox" />
+          </label>
         </div>
       </div>
-      <p class="hi bk">a</p>
-      <p class="hi pipe">s</p>
-      <p class="hi pipe">y</p>
-      <div class="stack">
-        <div>
-          <div class="line">
-            <p class="hi">g</p>
-            <p class="hi">w</p>
+
+      <div class="result">
+        <div class="line">
+          <!-- https://docs.angularjs.org/api/ng/directive/ngClass If the expression evaluates to an object, then for each key-value pair of the object with a truthy value the corresponding key is used as a class name.-->
+          <!-- https://docs.angularjs.org/guide/expression if you need if statment, make it a controller method and call the method from the view-->
+          <!-- https://docs.angularjs.org/guide/controller Any methods assigned to the scope are available in the template/view, and can be invoked via angular expressions -->
+          <!--  -->
+          <h2 class="hi" ng-class="{pipe: 'true==true'}">{{ nameBox.toLowerCase() }}</h2>
+        </div>
+      </div>
+
+      <div>...</div>
+      <div>..</div>
+      <div>.</div>
+
+      <div class="line">
+        <p class="hi bk">m</p>
+        <div class="stack">
+          <div>
+            <p class="hi">l</p>
+          </div>
+          <div>
+            <p class="hi">n</p>
           </div>
         </div>
-        <div>
-          <p class="hi">z</p>
+        <p class="hi bk">a</p>
+        <p class="hi pipe">s</p>
+        <p class="hi pipe">y</p>
+        <div class="stack">
+          <div>
+            <div class="line">
+              <p class="hi">g</p>
+              <p class="hi">w</p>
+            </div>
+          </div>
+          <div>
+            <p class="hi">z</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
-    <div ui-view></div>
+      <!-- the ng-view directive is where our templates will be loaded into when naviagted to -->
+      <div ui-view></div>
     </section>
+
+    <footer>
+      Words in the footer
+    </footer>
 
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
