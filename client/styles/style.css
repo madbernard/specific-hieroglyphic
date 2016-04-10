@@ -1,4 +1,5 @@
 /*font face for .hi to hieroglyphics apparently works better in head of html*/
+/*flexbox layout info from here: http://tutorialzine.com/2016/03/quick-tip-the-best-way-to-make-sticky-footers/*/
 
 body {
   font-family: Arial, sans-serif;
@@ -9,6 +10,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0;
   overflow-y: scroll;
 }
@@ -17,16 +19,24 @@ body {
   padding: 1em;
   background-color: #fff;
   display: flex;
+  flex: 1 0 auto;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 80%;
-  margin: 0 auto;
+  margin: 0.5em auto;
   margin-top: 2%;
-  height: 85%;
   border-style: outset;
   border-radius: 10px;
   border-color: #bbb;
   text-align: center;
+}
+
+footer{
+  flex: 0 0 auto;
+  background-color: #444;
+  color: aqua;
+  padding: 0.5em;
 }
 
 .title {
